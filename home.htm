@@ -1,9 +1,37 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>Equipo Sapiencia</title>
     
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <script src="js/sidebar.js"></script>
   </head>
+  
   <body>
-    
+    <!-- Barras de navegación -->
+    <nav class="top">
+      <a class="home" href="#">Inicio</a>
+      <div class="hide-small">
+	<a href="#acerca">Acerca de</a>
+	<a href="#equipo">Equipo</a>
+	<a href="#trabajo">Trabajo</a>
+	<a href="#contacto">Contacto</a>
+      </div>
+      <div class="hide-medium hide-large">
+	<a href="javascript:void(0)" onclick="openSidebar()">Menu</a>
+      </div>
+    </nav>
+
+    <nav id="sidebar" class="side hide-medium hide-large">
+	<a href="javascript:void(0)" onclick="closeSidebar()">Close</a>
+	<a href="#acerca" onclick="closeSidebar()">Acerca de</a>
+	<a href="#equipo" onclick="closeSidebar()">Equipo</a>
+	<a href="#trabajo" onclick="closeSidebar()">Trabajo</a>
+	<a href="#contacto" onclick="closeSidebar()">Contacto</a>
+    </nav>
   </body>
 </html>
