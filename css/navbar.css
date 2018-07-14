@@ -5,7 +5,6 @@ nav {
 
 nav.top {
     top: 0;
-    display: inline-block;
     width: 100%;
     margin: 0;
     overflow: hidden;
@@ -13,11 +12,8 @@ nav.top {
 }
 
 nav.top div {
+    display: inline-block;
     float: right;
-}
-
-nav.top a.home {
-    float: left;
 }
 
 nav.top a {
@@ -26,14 +22,23 @@ nav.top a {
     border: none;
     outline: 0;
     text-aling: center;
+    vertical-align: middle;
     color: #000;
-    padding: 20px 16px;
+    padding: 16px;
     text-decoration: none;
+}
+
+nav a.icon {
+    padding: 12px !important;
 }
 
 nav.top a:hover {
     color: #fff;
     background-color: #111;
+}
+
+nav.top a.home {
+    float: left;
 }
 
 nav.side {
@@ -57,14 +62,13 @@ nav.side {
 }
 
 nav.side a {
-    display: inherit;
-    widht: auto;
+    display: block;
+    width: auto;
     border: none;
     outline: 0;
     text-aling: right;
-    vertical-align: right;
     color: #fff;
-    padding: 20px 16px;
+    padding: 16px;
     text-decoration: none;
 }
 
