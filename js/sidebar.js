@@ -1,11 +1,27 @@
 function openSidebar() {
-    if (document.getElementById('sidebar').style.display === 'block') {
-        document.getElementById('sidebar').style.display = 'none';
+    var icon = document.getElementById("menu");
+    var sidebar = document.getElementById("sidebar");
+    var main = document.getElementById("main");
+    
+    if(icon.innerHTML === "menu") {
+	icon.innerHTML = "close";
+	sidebar.style.width = "200px";
+	main.style.marginRight = "200px";
+	main.style.marginLeft = "-200px";
     } else {
-        document.getElementById('sidebar').style.display = 'block';
+	icon.innerHTML = "menu"
+	sidebar.style.width = "0";
+	main.style.marginRight= "0";
+	main.style.marginLeft = "0";
     }
 }
 
 function closeSidebar() {
-    document.getElementById('sidebar').style.display = 'none';
+    var icon = document.getElementById("menu");
+    var sidebar = document.getElementById("sidebar");
+    var main = document.getElementById("main");
+    icon.innerHTML = "menu"
+    sidebar.style.width = "0";
+    main.style.marginRight = "0";
+    main.style.marginLeft = "0";
 }

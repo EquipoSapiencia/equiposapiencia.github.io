@@ -3,6 +3,10 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+a {
+    color: inherit;
+}
+
 .left-align { 
     text-align: left !important;
 }
@@ -186,6 +190,11 @@ body {
     }
 }
 
+.white {
+    color: #000 !important;
+    background-color: #fff !important;
+}
+
 .light-grey {
     color: #000 !important;
     background-color: #f1f1f1 !important;
@@ -199,6 +208,11 @@ body {
 .dark-grey {
     color: #fff !important;
     background-color: #616161 !important;
+}
+
+.black {
+    color: #fff !important;
+    background-color: #000 !important;
 }
 
 .light {
