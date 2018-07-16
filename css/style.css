@@ -215,3 +215,8 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+icon {
+    display: inline-block;
+    vertical-align: middle;
+}

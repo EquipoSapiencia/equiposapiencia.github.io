@@ -30,3 +30,11 @@
 .hover-light:hover {
     opacity: 1;
 }
+
+.dark {
+    opacity: 1;
+}
+
+.hover-dark:hover {
+    opacity: 0.6;
+}

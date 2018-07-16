@@ -35,8 +35,8 @@ function closeSidebar() {
     
     icon.innerHTML = "menu"
     sidebar.style.width = "0";
-    header.style.marginRight = "200px";
-    header.style.marginLeft = "-200px";
+    header.style.marginRight = "0px";
+    header.style.marginLeft = "0px";
     main.style.marginRight = "0";
     main.style.marginLeft = "0";
     footer.style.marginRight = "0px";
