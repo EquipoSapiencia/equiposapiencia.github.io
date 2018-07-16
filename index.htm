@@ -2,189 +2,126 @@
 <html>
   <head>
     <title>Equipo Sapiencia</title>
-    
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/palette.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/navbar.css">
     <script src="js/sidebar.js"></script>
   </head>
-  
+
   <body>
     <!-- Barras de navegación -->
-    <header>
+    <navbar>
       <nav class="top">
-	<a class="home" href="#">Logo</a>
+	<a class="home" href="index.htm">Logo</a>
 	<div class="hide-small">
-	  <a href="#acerca">Acerca de</a>
-	  <a href="#equipo">Equipo</a>
 	  <a href="#trabajo">Trabajo</a>
+	  <a href="#acerca">Nosotros</a>
 	  <a href="#contacto">Contacto</a>
 	</div>
 	<div class="hide-medium hide-large">
-	  <a class="icon" href="javascript:void(0)" onclick="openSidebar()"><icon class="material-icons">menu</icon></a>
+	  <a class="icon" href="javascript:void(0)" onclick="openSidebar()"><icon id="menu" class="material-icons">menu</icon></a>
 	</div>
       </nav>
-      
+
       <nav id="sidebar" class="side hide-medium hide-large">
-	<a class="icon" href="javascript:void(0)" onclick="closeSidebar()"><icon class="material-icons">close</icon></a>
-	<a href="#acerca" onclick="closeSidebar()">Acerca de</a>
-	<a href="#equipo" onclick="closeSidebar()">Equipo</a>
 	<a href="#trabajo" onclick="closeSidebar()">Trabajo</a>
+	<a href="#acerca" onclick="closeSidebar()">Nosotros</a>
 	<a href="#contacto" onclick="closeSidebar()">Contacto</a>
       </nav>
+    </navbar>
+
+    <!-- Cabecera -->
+    <header id="header" class="bgimg black">
+      <div class="section">
+	<p class="jumbo hide-small">Potencia tu inteligencía</p>
+	<p class="xxlarge hide-large hide-medium">Potencia tu inteligencía</p>
+	<p class="large">Estudia con personas preparadas para enseñarte</p>
+	<p><a href="#contacto" class="button white padding-large large margin-top light hover-light">Agenda tu clase</a></p>
+      </div>
     </header>
 
-    <main>
-
-      <!-- Acerca de -->
-      <div id="acerca" class="section">
-	<h3 class="center">ACERCA DE LA COMPAÑIA</h3>
-	<p class="center">Características de nuestra compañía</p>
-	<div class="col-quarter">
-	  <h3 class="center">Responsabilidad</h3>
-	  <p class="center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-	</div>
-	<div class="col-quarter">
-	  <h3 class="center">Compromiso</h3>
-	  <p class="center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-	</div>
-	<div class="col-quarter">
-	  <h3 class="center">Apoyo</h3>
-	  <p class="center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-	</div>
-	<div class="col-quarter">
-	  <h3 class="center">Solidaridad</h3>
-	  <p class="center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-	</div>
-      </div>
-
-      <!-- Equipo -->
-      <div id="equipo" class="section">
-	<h3 class="center">EL EQUIPO</h3>
-	<p class="center">Ellos son nuestros profesores</p>
-	<div class="col-quarter">
-	  <div class="container">
-	    <div class="shadow">
-	      <div class="container">
-		<h3>Nombre</h3>
-		<p class="light">Ocupacion</p>
-		<ul>
-		  <li>Clase</li>
-		  <li>Clase</li>
-		  <li>Clase</li>
-		</ul>
-	      </div>
-	    </div>
-	  </div>
-	</div>
-	<div class="col-quarter">
-	  <div class="container">
-	    <div class="shadow">
-	      <div class="container">
-		<h3>Nombre</h3>
-		<p class="light">Ocupacion</p>
-		<ul>
-		  <li>Clase</li>
-		  <li>Clase</li>
-		  <li>Clase</li>
-		</ul>
-	      </div>
-	    </div>
-	  </div>
-	</div>
-	<div class="col-quarter">
-	  <div class="container">
-	    <div class="shadow">
-	      <div class="container">
-		<h3>Nombre</h3>
-		<p class="light">Ocupacion</p>
-		<ul>
-		  <li>Clase</li>
-		  <li>Clase</li>
-		  <li>Clase</li>
-		</ul>
-	      </div>
-	    </div>
-	  </div>
-	</div>
-	<div class="col-quarter">
-	  <div class="container">
-	    <div class="shadow">
-	      <div class="container">
-		<h3>Nombre</h3>
-		<p class="light">Ocupacion</p>
-		<ul>
-		  <li>Clase</li>
-		  <li>Clase</li>
-		  <li>Clase</li>
-		</ul>
-	      </div>
-	    </div>
-	  </div>
-	</div>
-      </div>
-
-      <div class="container center dark-grey padding-64">
-	<div class="col-quarter">
-	  <span class="xxlarge">5+</span>
-	  <br>Socios
-	</div>
-	<div class="col-quarter">
-	  <span class="xxlarge">0+</span>
-	  <br>Promedio Estudiantes
-	</div>
-	<div class="col-quarter">
-	  <span class="xxlarge">0+</span>
-	  <br>Clientes Felices
-	</div>
-	<div class="col-quarter">
-	  <span class="xxlarge">0+</span>
-	  <br>Encuentros
-	</div>
-      </div>
+    <!-- Principal -->
+    <main id="main">
 
       <!-- Trabajo -->
       <div id="trabajo" class="section">
-	<h3 class="center">Nuestro Trabajo</h3>
-	<p class="center">Así trabaja el equipo sapiencia</p>
+	<h3 class="center">NUESTRO TRABAJO</h3>
+	<p class="center large">Así trabaja el equipo sapiencia</p>
+	<p>Nuestro grandioso equipo de trabajo se desempeña en muchas y diferentes areas, con varios años de experiencia, son capaces de hacerte entender.</p>
+	<p>Dictamos clases particulares en materias como:</p>
+	<ul>
+	  <li>Química</li>
+	  <li>Biología</li>
+	  <li>Inglés</li>
+	  <li>Matemáticas</li>
+	  <li>Física</li>
+	</ul>
+	<p></p>
       </div>
 
       <div class="container light-grey padding-64">
-	<div>
-	  <div class="col-half">
-	    <h3>Our Skills</h3>
+	<div class="col-half">
+	  <div class="container">
+	    <h3>Nuestras Habilidades</h3>
 	    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
 	    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
 	  </div>
-	  <div class="col-half">
+	</div>
+	<div class="col-half">
+	  <div class="container">
 	    <p>Matemáticas</p>
-	    <div class="grey">
-              <div class="container dark-grey center padding-8" style="width:90%">90%</div>
+	    <div class="grey" style="width:100%">
+	      <div class="dark-grey center" style="width:90%">
+		<p class="padding-8">90%</p>
+	      </div>
 	    </div>
 	    <p>Sociales</p>
-	    <div class="grey">
-              <div class="container dark-grey center padding-8" style="width:85%">85%</div>
+	    <div class="grey" style="width:100%">
+	      <div class="dark-grey center" style="width:85%">
+		<p class="padding-8">85%</p>
+	      </div>
 	    </div>
 	    <p>Literatura</p>
-	    <div class="grey">
-              <div class="container dark-grey center padding-8" style="width:75%">75%</div>
+	    <div class="grey" style="width:100%">
+	      <div class="dark-grey center" style="width:75%">
+		<p class="padding-8">75%</p>
+	      </div>
 	    </div>
 	  </div>
 	</div>
+      </div>
+
+      <!-- Acerca de -->
+      <div id="acerca" class="section">
+	<h3 class="center">SOBRE NOSOTROS</h3>
+	<p class="center">Clases particulares</p>
+      </div>
+
+      <div class="section dark-grey">
+	<h3 class="center">Somos los mejores</h3>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
       </div>
 
       <!-- Contacto -->
       <div id="contacto" class="section light-grey">
-	<h3 class="center">Contacto</h3>
+	<h3 class="center">CONTACTO</h3>
 	<p class="center">Entre en contacto con nosotros. Envíenos un mensaje.</p>
 	<div class="container">
 	  <p><icon class="material-icons margin-right">email</icon>Correo Electrónico: equiposapiencia@gmail.com</p>
 	</div>
       </div>
     </main>
+
+    <footer id="footer" class="section center black padding-64">
+      <a href="#header" class="button light-grey hover-dark padding-16"><icon class="material-icons">arrow_upward</icon></a>
+      <p>Todos los derechos reservados ® Equipo Sapiencia.</p>
+      <p>Copyright © 2018</p>
+    </footer>
   </body>
 </html>

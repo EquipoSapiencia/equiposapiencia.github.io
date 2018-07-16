@@ -19,17 +19,16 @@ nav.top div {
 nav.top a {
     display: inline-block;
     width: auto;
+    height: 24px;
+    line-height: 24px;
     border: none;
     outline: 0;
-    text-aling: center;
+    text-align: center;
     vertical-align: middle;
     color: #000;
     padding: 16px;
     text-decoration: none;
-}
-
-nav a.icon {
-    padding: 12px !important;
+    transition: 0.3s;
 }
 
 nav.top a:hover {
@@ -42,23 +41,22 @@ nav.top a.home {
 }
 
 nav.side {
-    display: none;
+    display: block;
     height: 100%;
-    width: 200px;
+    width: 0px;
     margin: 0;
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
     background-color: #000;
+    top: 56px;
     right: 0;
-    animation: animateright 0.4s;
+    transition: 0.5s;
 }
 
-@keyframes animateright { 
-    from { 
-	right:-300px;opacity:0
-    }
-    to { 
-	right:0;opacity:1
-    }
+#header,
+#main,
+#footer {
+    transition: 0.5s;
 }
 
 nav.side a {
@@ -66,10 +64,12 @@ nav.side a {
     width: auto;
     border: none;
     outline: 0;
-    text-aling: right;
+    text-align: right;
     color: #fff;
     padding: 16px;
     text-decoration: none;
+    transition: 0.3s;
+    overflow-x: hidden;
 }
 
 nav.side a:hover {
