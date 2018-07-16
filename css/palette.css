@@ -26,3 +26,7 @@
 .light {
     opacity: 0.6;
 }
+
+.hover-light:hover {
+    opacity: 1;
+}
